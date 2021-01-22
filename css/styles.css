@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
     --main-color: #212121;
     --logo-color: #000000;
@@ -11,6 +16,8 @@
 }
 .main-menu{
     background:var(--active-color);
+    max-width: 1600px;
+    padding: 0 15px;
     }
 .main-menu a {
     text-decoration: none;
@@ -59,6 +66,11 @@
     } 
     .hero {
         background:var(--background-dark-color);
+        text-align: center;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        border: 1px solid #ECECEC;
+
     }
     .title-hero {
         font-family: Roboto;
@@ -68,7 +80,7 @@
         letter-spacing: 0.06em;
         color:var(--active-color);
         text-transform: uppercase;
-    }
+        }
     .button {
         font-family: Roboto;
         font-weight: bold;
@@ -76,18 +88,30 @@
         line-height: 30px;
         color:var(--active-color);
         background-color:var(--accent-color);
-    }    
+        width: 200px;
+        height: 50px;
+        left: 700px;
+        top: 430px;
+        margin-top: 40px;
+        
+        }    
     .button:hover {
     cursor: pointer;    
     }    
-    
+    .advatages {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     .advantages-item {
         font-family: Roboto;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color:var(--inactive-color);
-    }
+       }
+    .advantages-item >p {
+        padding-top: 10px;
+       }   
     .advantages-header {
         font-family: Roboto;
         font-size: 14px;
@@ -96,7 +120,10 @@
         font-weight: bold;
         text-transform: uppercase;
         color: var(--background-dark-color);
-    }
+       }
+       .specialization {
+           padding-bottom: 94px;
+       }
     .specialization-header {
         font-family: Roboto;
         font-size: 36px;
@@ -107,6 +134,9 @@
     }
     .our-team {
         background-color:var(--background-light-color);
+        padding-top: 94px;
+        padding-bottom: 94px;
+        
     }
     .our-team-header {
         font-family: Roboto;
@@ -115,6 +145,7 @@
         line-height: 1.17;
         letter-spacing: 0.03em;
         color: var(--main-color);
+        margin-bottom: 50px;
     }
    .name {
        font-family: Roboto;
@@ -199,5 +230,22 @@
     .link-logo {
         text-decoration: none;
     }
-   
-    
+    .visually-hidden {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+      }
+      .menu-item{
+        margin-top: 32px;
+        margin-bottom: 32px;
+      }
+     .name-team {
+         margin-top: 30px;
+         padding-top: 10px;
+     }
+     .contact-information {
+       padding-top: 60px;
+       padding-bottom: 60px;
+   }
