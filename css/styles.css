@@ -16,11 +16,21 @@
 }
 .main-menu{
     background:var(--active-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+   }
+   
+.main-menu-container {
     max-width: 1600px;
     padding: 0 15px;
+    height: auto;
     }
 .main-menu a {
     text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 50px;
 }   
 .link {
         font-family: Roboto;
@@ -59,18 +69,32 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
         color:var(--inactive-color);
+        display: block;
     }
     .tel-mail-title a:hover,
     .tel-mail-title a:focus{
         color:var(--accent-color)
-    } 
+    }
+    .menu-list {
+        display: flex;
+        flex-direction: row;
+       }
+    .tel-mail-title {
+        display: flex;
+        flex-direction: row; 
+        justify-content: flex-end;
+       }
+    /* Меню студия */
     .hero {
         background:var(--background-dark-color);
         text-align: center;
         padding-top: 200px;
         padding-bottom: 200px;
         border: 1px solid #ECECEC;
-
+    }
+    .hero-container{
+        max-width: 1600px;
+        padding: 0 15px;
     }
     .title-hero {
         font-family: Roboto;
@@ -97,11 +121,16 @@
         }    
     .button:hover {
     cursor: pointer;    
-    }    
+    }   
+     /*Секция герой  */
     .advatages {
         padding-top: 94px;
         padding-bottom: 94px;
-    }
+        }
+    .advatages-container {
+        max-width: 1600px;
+        padding: 0 15px; 
+    }    
     .advantages-item {
         font-family: Roboto;
         font-size: 14px;
@@ -120,10 +149,16 @@
         font-weight: bold;
         text-transform: uppercase;
         color: var(--background-dark-color);
+        
        }
+       /* Секция преимущества */
        .specialization {
            padding-bottom: 94px;
-       }
+        }
+        .specialization-container {
+            max-width: 1600px;
+            padding: 0 15px; 
+        }
     .specialization-header {
         font-family: Roboto;
         font-size: 36px;
@@ -131,12 +166,21 @@
         line-height: 1.16;
         letter-spacing: 0.03em;
         color:var(--main-color);
+        text-align: center;
+        padding-bottom: 30px;
     }
+    /* секция специализация*/
     .our-team {
         background-color:var(--background-light-color);
         padding-top: 94px;
         padding-bottom: 94px;
-        
+        text-align: center;
+        width: 270 px
+    
+    }
+    .our-team-container {
+        max-width: 1600px;
+        padding: 0 15px; 
     }
     .our-team-header {
         font-family: Roboto;
@@ -145,7 +189,9 @@
         line-height: 1.17;
         letter-spacing: 0.03em;
         color: var(--main-color);
-        margin-bottom: 50px;
+        padding-top: 94px;
+        padding-top: 50px;
+        
     }
    .name {
        font-family: Roboto;
@@ -154,16 +200,38 @@
        line-height: 1.19;
        letter-spacing: 0.03em;
        color: var(--main-color);
-    }
+       }
     .profession {
         font-family: Roboto;
         font-size: 16px;
         line-height: 1.19;
         letter-spacing: 0.03em;
         color:var(--inactive-color);
+        padding-top: 10px;
     }
+    .name-team {
+        padding-bottom: 30px;
+        width: 270px;
+        background-color:var(--active-color);
+        padding-top: 30px;
+    }
+    .card-image {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .card-image.no-gap {
+        display: block;
+      }
+      /*Секци наша команда  */
     .contact-information {
        background:var(--background-dark-color);
+       padding-top: 60px;
+       padding-bottom: 60px;
+    }
+    .contact-information-container {
+        max-width: 1600px;
+        padding: 0 15px; 
     }
     .logo-studio-white {
         color:var(--active-color);
@@ -192,6 +260,11 @@
     .tel-mail:focus {
            color:var(--accent-color);
     }
+    .contact-information a {
+        display: block;
+        padding-top: 9px;
+    }
+    /* Футер студии */
     .button-portfolio {
            background:var(--background-light-color);
            border-radius: 4px;
@@ -229,6 +302,8 @@
     }
     .link-logo {
         text-decoration: none;
+        padding-bottom: 20px;
+
     }
     .visually-hidden {
         position: absolute;
@@ -237,15 +312,4 @@
         height: 1px;
         margin: -1px;
       }
-      .menu-item{
-        margin-top: 32px;
-        margin-bottom: 32px;
-      }
-     .name-team {
-         margin-top: 30px;
-         padding-top: 10px;
-     }
-     .contact-information {
-       padding-top: 60px;
-       padding-bottom: 60px;
-   }
+   
