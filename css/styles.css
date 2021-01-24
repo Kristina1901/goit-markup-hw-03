@@ -16,25 +16,22 @@
 }
 .main-menu{
     background:var(--active-color);
-    padding-bottom: 32px;
-    padding-top: 32px;
-    padding-right: 215px;
-    padding-left: 215px;
+    padding-left: 93px;
     border: 1px solid #ECECEC;
-    }
-
-.menu-item:not(:first-child) {
-    padding-top: 32px;
-  }   
-.menu-item:first-child {
-    padding-top: 24px;  
-}   
-   
+   }
 .main-menu-container {
-    max-width: 1600px;
-    padding: 0 15px;
-    height: auto;
-    }
+        width: 1170px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        height: auto;
+        margin: 0 auto;
+        }    
+
+.menu-item:first-child {
+    margin-top: 24px; 
+    margin-right: 93px;
+     
+}   
 .main-menu a {
     text-decoration: none;
     }   
@@ -46,10 +43,11 @@
         letter-spacing: 0.02em;
         color:var(--main-color);
         display: block;
-        padding-right: 50px;
+        margin-right: 50px;
+        margin-top: 32px;
     }
     .menu-list:last-child {
-       padding-right: 0px;
+       margin-right: 0px;
     }
    .link:hover, 
    .link:focus {
@@ -82,7 +80,8 @@
         letter-spacing: 0.02em;
         color:var(--inactive-color);
         display: block;
-        padding-right: 50px; 
+        padding-left: 50px; 
+        padding-top: 32px;
       }
     .tel-mail-title a:hover,
     .tel-mail-title a:focus{
@@ -113,8 +112,10 @@
         border: 1px solid #ECECEC;
     }
     .hero-container{
-        max-width: 1600px;
-        padding: 0 15px;
+        width: 1170x;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        margin: 0 auto;
         height: auto;
     }
     .title-hero {
@@ -138,8 +139,10 @@
         left: 700px;
         top: 430px;
         margin-top: 40px;
-        
-        }    
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0;
+     }    
     .button:hover {
     cursor: pointer;    
     }   
@@ -147,16 +150,17 @@
     .advantages {
         padding-top: 94px;
         padding-bottom: 94px;
-        }
+      }
     .advantages-container {
-        max-width: 1600px;
-        padding: 0 15px; 
-        display: flex;
-        justify-content:space-between;
+        width: 1170px;
+        padding-right: 15px; 
+        padding-bottom: 15px;
         height: auto;
+        margin: 0 auto;
        }
     .advantages-menu {
         display: flex;
+        justify-content:space-between;
         }       
     .advantages-item {
         font-family: Roboto;
@@ -169,7 +173,7 @@
        }
     .advantages-item:last-child {
         margin-right: 0px;
-     }   
+     }  
     .advantages-item   
     .advantages-item >p {
         padding-top: 10px;
@@ -186,13 +190,13 @@
        /* Секция преимущества */
        .specialization {
            padding-bottom: 94px;
-           padding-right: 185px;
-           padding-left: 185px;
-         }
+          }
         .specialization-container {
-            max-width: 1600px;
-            padding: 0 15px; 
+            max-width: 1170px;
+            padding-left: 15px;
+            padding-right: 15px; 
             height: auto;
+            margin: 0 auto;
            }
         .specialization-item {
             display: flex;
@@ -219,17 +223,17 @@
         padding-top: 94px;
         padding-bottom: 94px;
         text-align: center;
-        padding-right: 185px;
-        padding-left: 185px;
-    }
+        }
     .our-team-container {
-        max-width: 1600px;
-        padding: 0 15px; 
+        max-width: 1170px;
+        padding-right: 15px; 
+        padding-bottom: 15px;
         height: auto;
+        margin: 0 auto;
     }
     .our-team-list {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .our-team-item {
         padding-right: 30px;
@@ -282,12 +286,12 @@
        padding-bottom: 60px;
     }
     .contact-information-container {
-        max-width: 1600px;
-        padding: 0 15px; 
+        max-width: 1170px;
+        padding-right: 15px; 
+        padding-bottom: 15px;
         height: auto;
-    }
-    .company-address {
-        margin-top: 20px;
+        margin: 0 auto;
+        padding-top: 60px;
     }
     .logo-studio-white {
         color:var(--active-color);
@@ -311,7 +315,7 @@
           letter-spacing: 0.03em;
           color:var(--inactive-color);
           text-decoration: none;
-    }
+        }
     .tel-mail:hover,
     .tel-mail:focus {
            color:var(--accent-color);
@@ -320,6 +324,9 @@
         display: block;
         padding-top: 9px;
     }
+    .link-logo {
+        margin-bottom: 20px;
+    }
     .contact-information:last-child {
         padding-top: 0px;
     } 
@@ -327,18 +334,18 @@
     .portfolio {
        padding-top: 100px;
        padding-bottom: 56px;
-       padding-right: 464px;
-       padding-left: 464px;
-    }
+      }
     .portfolio-container {
-        max-width: 1600px;
-        padding: 0 15px; 
-        height: auto;  
+        max-width: 1170px;
+        padding-right: 15px; 
+        padding-bottom: 15px;
+        height: auto;
+        margin: 0 auto;
     }
     .button-list {
         display: flex;
-        justify-content: space-evenly;
-    }
+        justify-content: center;
+      }
     .portfolio-item {
         display: flex;
         padding-right: 30px;
@@ -358,6 +365,7 @@
            height: 38px;
            border: 0;
            border-radius: 4px;
+           display: block;
         }
     .button-portfolio:hover,
     .button-portfolio:focus {
@@ -380,6 +388,7 @@
             letter-spacing: 0.03em;
             color:var(--inactive-color);
             text-decoration: none;
+            display: block;
     }
     .link-logo {
         text-decoration: none;
@@ -393,4 +402,34 @@
         height: 1px;
         margin: -1px;
       }
+      .porfolio-examples {
+          padding-bottom: 94px;
+        }
+      .porfolio-examples-container {
+          width: 1170;
+          height: auto;
+          padding-right:  15px; 
+          padding-bottom: 15px;
+          margin: 0 auto;
+      }
+      .porfolio-examples-item img {
+        display: block;
+        }   
+     .porfolio-list {
+        display: flex;
+        margin-left: -30px;
+        margin-top: -30px;
+        flex-wrap: wrap;
+        padding: 0;
+        list-style: none;
+        justify-content: center;
+        }
+    .porfolio-examples-item {
+        display: flex;
+        margin-left: 30px;
+        margin-top: 30px;
+        width: 370px;
+        border: 1px solid #EEEEEE;
+     }
+    
    
