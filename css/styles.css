@@ -177,7 +177,7 @@
      }  
     .advantages-item   
     .advantages-item >p {
-        padding-top: 10px;
+        margin-top: 10px;
        }   
     .advantages-header {
         font-family: Roboto;
@@ -201,11 +201,11 @@
            }
         .specialization-item {
             display: flex;
-            padding-left: 30px;
+            margin-left: 30px;
         }
         .specialization-list {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
           }
         
     .specialization-header {
@@ -234,7 +234,7 @@
     }
     .our-team-list {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
     .our-team-item {
         padding-right: 30px;
@@ -283,16 +283,17 @@
       /*Секци наша команда  */
     .contact-information {
        background:var(--background-dark-color);
-       padding-top: 60px;
-       padding-bottom: 60px;
-    }
+       }
     .contact-information-container {
         max-width: 1170px;
         padding-right: 15px; 
         padding-bottom: 15px;
         height: auto;
         margin: 0 auto;
+        }
+    .contact-information-wrapper {
         padding-top: 60px;
+        padding-bottom: 60px;
     }
     .logo-studio-white {
         color:var(--active-color);
@@ -325,12 +326,6 @@
         display: block;
         padding-top: 9px;
     }
-    .link-logo {
-        margin-bottom: 20px;
-    }
-    .contact-information:last-child {
-        padding-top: 0px;
-    } 
     /* Футер студии */
     .portfolio {
        padding-top: 100px;
