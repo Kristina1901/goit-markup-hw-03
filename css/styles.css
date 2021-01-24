@@ -16,9 +16,19 @@
 }
 .main-menu{
     background:var(--active-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
-   }
+    padding-bottom: 32px;
+    padding-top: 32px;
+    padding-right: 215px;
+    padding-left: 215px;
+    border: 1px solid #ECECEC;
+    }
+
+.menu-item:not(:first-child) {
+    padding-top: 32px;
+  }   
+.menu-item:first-child {
+    padding-top: 24px;  
+}   
    
 .main-menu-container {
     max-width: 1600px;
@@ -27,11 +37,7 @@
     }
 .main-menu a {
     text-decoration: none;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-right: 50px;
-}   
+    }   
 .link {
         font-family: Roboto;
         font-weight: 500;
@@ -39,21 +45,27 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
         color:var(--main-color);
-        }
+        display: block;
+        padding-right: 50px;
+    }
+    .menu-list:last-child {
+       padding-right: 0px;
+    }
    .link:hover, 
    .link:focus {
      color:var(--accent-color);
     }
     .current{
         color:var(--accent-color);
-    } 
+        display: block;
+        }
     .logo-web{
         color: var(--accent-color);
         font-family: Raleway;
         font-weight: bold;
         font-size: 26px;
         line-height: 1.19;
-    }
+        }
     .logo-studio{
         color:var(--logo-color);
         font-family: Raleway;
@@ -70,20 +82,28 @@
         letter-spacing: 0.02em;
         color:var(--inactive-color);
         display: block;
-    }
+        padding-right: 50px; 
+      }
     .tel-mail-title a:hover,
     .tel-mail-title a:focus{
         color:var(--accent-color)
     }
+    header > .main-menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+      }
+    .nav {
+        display: flex;
+        align-items: center;
+      }  
     .menu-list {
         display: flex;
-        flex-direction: row;
-       }
+      } 
     .tel-mail-title {
-        display: flex;
-        flex-direction: row; 
-        justify-content: flex-end;
-       }
+     display: flex;
+    } 
     /* Меню студия */
     .hero {
         background:var(--background-dark-color);
@@ -95,6 +115,7 @@
     .hero-container{
         max-width: 1600px;
         padding: 0 15px;
+        height: auto;
     }
     .title-hero {
         font-family: Roboto;
@@ -123,21 +144,33 @@
     cursor: pointer;    
     }   
      /*Секция герой  */
-    .advatages {
+    .advantages {
         padding-top: 94px;
         padding-bottom: 94px;
         }
-    .advatages-container {
+    .advantages-container {
         max-width: 1600px;
         padding: 0 15px; 
-    }    
+        display: flex;
+        justify-content:space-between;
+        height: auto;
+       }
+    .advantages-menu {
+        display: flex;
+        }       
     .advantages-item {
         font-family: Roboto;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color:var(--inactive-color);
+        width: 270px;
+        margin-right: 30px;
        }
+    .advantages-item:last-child {
+        margin-right: 0px;
+     }   
+    .advantages-item   
     .advantages-item >p {
         padding-top: 10px;
        }   
@@ -149,16 +182,27 @@
         font-weight: bold;
         text-transform: uppercase;
         color: var(--background-dark-color);
-        
        }
        /* Секция преимущества */
        .specialization {
            padding-bottom: 94px;
-        }
+           padding-right: 185px;
+           padding-left: 185px;
+         }
         .specialization-container {
             max-width: 1600px;
             padding: 0 15px; 
+            height: auto;
+           }
+        .specialization-item {
+            display: flex;
+            padding-left: 30px;
         }
+        .specialization-list {
+            display: flex;
+            justify-content: space-between;
+          }
+        
     .specialization-header {
         font-family: Roboto;
         font-size: 36px;
@@ -175,12 +219,20 @@
         padding-top: 94px;
         padding-bottom: 94px;
         text-align: center;
-        width: 270 px
-    
+        padding-right: 185px;
+        padding-left: 185px;
     }
     .our-team-container {
         max-width: 1600px;
         padding: 0 15px; 
+        height: auto;
+    }
+    .our-team-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    .our-team-item {
+        padding-right: 30px;
     }
     .our-team-header {
         font-family: Roboto;
@@ -189,8 +241,7 @@
         line-height: 1.17;
         letter-spacing: 0.03em;
         color: var(--main-color);
-        padding-top: 94px;
-        padding-top: 50px;
+        padding-bottom: 50px;
         
     }
    .name {
@@ -222,7 +273,8 @@
       
       .card-image.no-gap {
         display: block;
-      }
+        display: flex;
+        }
       /*Секци наша команда  */
     .contact-information {
        background:var(--background-dark-color);
@@ -232,6 +284,10 @@
     .contact-information-container {
         max-width: 1600px;
         padding: 0 15px; 
+        height: auto;
+    }
+    .company-address {
+        margin-top: 20px;
     }
     .logo-studio-white {
         color:var(--active-color);
@@ -264,7 +320,29 @@
         display: block;
         padding-top: 9px;
     }
+    .contact-information:last-child {
+        padding-top: 0px;
+    } 
     /* Футер студии */
+    .portfolio {
+       padding-top: 100px;
+       padding-bottom: 56px;
+       padding-right: 464px;
+       padding-left: 464px;
+    }
+    .portfolio-container {
+        max-width: 1600px;
+        padding: 0 15px; 
+        height: auto;  
+    }
+    .button-list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .portfolio-item {
+        display: flex;
+        padding-right: 30px;
+    }
     .button-portfolio {
            background:var(--background-light-color);
            border-radius: 4px;
@@ -276,7 +354,11 @@
            letter-spacing: 0.03em;
            color: var(--main-color);
            cursor: default;
-    }
+           width: 130px;
+           height: 38px;
+           border: 0;
+           border-radius: 4px;
+        }
     .button-portfolio:hover,
     .button-portfolio:focus {
             background-color:var(--accent-color);
@@ -298,7 +380,6 @@
             letter-spacing: 0.03em;
             color:var(--inactive-color);
             text-decoration: none;
-            
     }
     .link-logo {
         text-decoration: none;
