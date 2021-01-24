@@ -80,8 +80,8 @@
         letter-spacing: 0.02em;
         color:var(--inactive-color);
         display: block;
-        padding-left: 50px; 
-        padding-top: 32px;
+        margin-right: 50px; 
+        margin-top: 32px;
       }
     .tel-mail-title a:hover,
     .tel-mail-title a:focus{
@@ -126,6 +126,7 @@
         letter-spacing: 0.06em;
         color:var(--active-color);
         text-transform: uppercase;
+        text-align: center;
         }
     .button {
         font-family: Roboto;
@@ -138,7 +139,7 @@
         height: 50px;
         left: 700px;
         top: 430px;
-        margin-top: 40px;
+        margin-top: 30px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         border: 0;
