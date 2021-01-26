@@ -354,6 +354,24 @@
             color: var(--active-color);
             cursor: pointer;
     }
+    /* finish section */
+    .portfolio-photo {
+        padding-bottom: 94px;
+    }
+    .portfolio-list {
+       display: flex;
+       flex-wrap: wrap;
+       margin-top: -30px;
+       margin-left: -30px;
+       justify-content: center;
+   }
+    .portfolio-gallery {
+       display: flex;
+       flex-basis: calc (100% / 3 - 30px);
+       margin-top: 30px;
+       margin-left: 30px;
+       border: 1px solid #EEEEEE;
+  }
     .portfolio-header {
             font-family: Roboto;
             font-weight: bold;
@@ -362,7 +380,7 @@
             letter-spacing: 0.06em;
             color:var(--main-color);
     }
-    .porfolio-list a {
+    .portfolio-list a {
             font-family: Roboto;
             font-size: 16px;
             line-height: 1.875;
