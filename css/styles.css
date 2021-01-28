@@ -223,15 +223,23 @@
     .our-team-item {
         display: flex;
         text-align: center;
-      }
-      .name-container {
-          margin-right: 30px;
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+        padding-bottom: 30px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
           0px 1px 1px rgba(0, 0, 0, 0.14), 
           0px 2px 1px rgba(0, 0, 0, 0.2);
           border-radius: 0px 0px 4px 4px;
-          padding-bottom: 30px;
-      }
+          margin-right: 30px;
+          width: 270px;
+            }
+    .name-container {
+       padding-left: 55px;
+       padding-right: 55px;
+       padding-top: 30px;
+    }
+    .name-container > img {
+       display: block;
+       min-width: 100px;
+           }
       .our-team-item:last-child {
           margin-right: 0px;
       }
@@ -242,9 +250,9 @@
         line-height: 1.17;
         letter-spacing: 0.03em;
         color: var(--main-color);
-        margin-bottom: 50px;
         text-align: center;
-    }
+        margin-bottom: 50px;
+       }
    .name {
        font-family: Roboto;
        font-size: 16px;
@@ -252,15 +260,14 @@
        line-height: 1.19;
        letter-spacing: 0.03em;
        color: var(--main-color);
-       margin-top: 30px;
-    }
+       margin-bottom: 10px;
+       }
     .profession {
         font-family: Roboto;
         font-size: 16px;
         line-height: 1.19;
         letter-spacing: 0.03em;
         color:var(--inactive-color);
-        margin-top: 10px;
         }
         /* finish section */
     .contact-information {
@@ -381,6 +388,8 @@
        margin-top: 30px;
        margin-left: 30px;
        border: 1px solid #EEEEEE;
+       width: 370px;
+       padding-bottom: 20px;
   }
     .portfolio-header {
             font-family: Roboto;
@@ -389,9 +398,9 @@
             line-height: 2;
             letter-spacing: 0.06em;
             color:var(--main-color);
-            padding-left: 24px;
-           }
-    .portfolio-list a {
+            margin-bottom: 4px;
+             }
+    .portfolio-gallery a {
             font-family: Roboto;
             font-size: 16px;
             line-height: 1.875;
@@ -400,11 +409,16 @@
             text-decoration: none;
             display: block;
         }
+    .portfolio-gallery img {
+        display: block;
+        min-width: 100px;
+    } 
+    .portfolio-gallery-container {
+        padding-right: 24px;
+        padding-left: 24px;
+    }    
     .link-logo {
         text-decoration: none;
-    }
-    .portfolio-list p{
-        padding-left: 24px;
     }
    
    
