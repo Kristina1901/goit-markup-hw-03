@@ -3,6 +3,11 @@
 *::after {
   box-sizing: border-box;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
 :root {
     --main-color: #212121;
     --logo-color: #000000;
@@ -223,7 +228,6 @@
     .our-team-item {
         display: flex;
         text-align: center;
-        padding-bottom: 30px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
           0px 1px 1px rgba(0, 0, 0, 0.14), 
           0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -235,6 +239,7 @@
        padding-left: 55px;
        padding-right: 55px;
        padding-top: 30px;
+       padding-bottom: 30px;
     }
     .name-container > img {
        display: block;
@@ -306,8 +311,10 @@
           letter-spacing: 0.03em;
           color:var(--inactive-color);
           text-decoration: none;
-          margin-top: 9px;
           display: block;
+    }
+    .contact-information-item {
+        margin-top: 9px;
     }
     .tel-mail:hover,
     .tel-mail:focus {
@@ -409,10 +416,6 @@
             text-decoration: none;
             display: block;
         }
-    .portfolio-gallery img {
-        display: block;
-        min-width: 100px;
-    } 
     .portfolio-gallery-container {
         padding-right: 24px;
         padding-left: 24px;
@@ -420,6 +423,7 @@
     .link-logo {
         text-decoration: none;
     }
+   
    
    
     
