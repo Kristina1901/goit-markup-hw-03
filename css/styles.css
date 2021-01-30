@@ -235,12 +235,14 @@ img {
           margin-right: 30px;
           width: 270px;
     }
+    .thumb {
+        padding-bottom: 30px;
+    }
     .name-container {
        padding-left: 55px;
        padding-right: 55px;
        padding-top: 30px;
-       padding-bottom: 30px;
-    }
+       }
     .name-container > img {
        display: block;
        min-width: 100px;
