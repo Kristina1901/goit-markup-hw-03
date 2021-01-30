@@ -210,7 +210,7 @@ img {
     display: flex;
     margin-right: 30px;  
     }
-    ..specialization-item :last-child {
+    .specialization-item :last-child {
         margin-right: 0px;
     }
     /* finish section */
